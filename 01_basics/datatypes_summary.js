@@ -23,30 +23,57 @@ const mySymbolVar = Symbol("123")
 // console.log(mySymbolVar);
 
 // Type of all data types
-console.log(typeof myString);
-console.log(typeof myNumber);
-console.log(typeof tempOutside);
-console.log(typeof placeHolder);
-console.log(typeof isLoggedIn);
-console.log(typeof BigInt);
-console.log(typeof mySymbolVar);
+// console.log(typeof myString);
+// console.log(typeof myNumber);
+// console.log(typeof tempOutside);
+// console.log(typeof placeHolder);
+// console.log(typeof isLoggedIn);
+// console.log(typeof BigInt);
+// console.log(typeof mySymbolVar);
 
 
-const heros = ["Iron-man", "Spider-ma", "Thor"]
+// const heros = ["Iron-man", "Spider-ma", "Thor"]
 
-let myObj = {
-    name: "Sam",
-    age: 25
-}
+// let myObj = {
+//     name: "Sam",
+//     age: 25
+// }
 
-const myFun = function(){
-    console.log("hello world");
+// const myFun = function(){
+//     console.log("hello world");
     
+// }
+
+// console.log(typeof myFun); // return type of function is function object
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack memory // Primitive data type
+
+// let score = 50
+
+// let nextScore = score
+// console.log(nextScore);
+
+// nextScore = 100
+// console.log(nextScore);
+
+
+
+// Heap memory // Non-Primitive data type
+
+let userOne = {
+    email: 'user@gmail.com',
+    upi: 'user@ybl'
 }
 
-console.log(typeof myFun); // return type of function is function object
+console.log(userOne);
 
 
+let userTwo = userOne
 
-
-
+userTwo.email = 'userTwo@gmail.com'
+console.log(userOne);
+console.log(userTwo);
